@@ -86,7 +86,8 @@ public class EchoDialog : IDialog<object>
         list.Add("Hola, soy nuevo y no me ubico muxo en esto de los fors, queria saber si alguien sabe como construir una dobladora d etubos(pipe bender), vi que un integrante del foro tenia una antigua, me gustatia saber si puede compartir las dimensiones(un planito), lo d ela bomba se cambia por una gata hidraulica y listo. Gracias de antemano y muy buen foro");
 
         Random random = new Random();
-        int randomNumber = random.Next(0, list.Count);
+        int total = list.Count;
+        int randomNumber = random.Next(0, total);
 
         return list[randomNumber];
     }
